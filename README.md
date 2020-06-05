@@ -1,1 +1,3 @@
-# monte_carlo_shape_factors
+# Monte Carlo Simulations for Thermal Radiation Shape Factors
+
+In this notebook, I confirm the method for determining shape factor as described in "Monte Carlo Technique for the Determination of Thermal Radiation Shape Factors". I investigate the following 4 geometrical pairs: a cylinder to a plane, a plane to a cylinder, a sphere to a circle, and a circle to a sphere. As in the original paper, I choose points on the emitting surface, I choose a random cone angle and azimuth angle, and finally I examine whether such a ray would have landed on the receiving surface through simple trigonometric equations. The main difference with my current method from the original paper is that I choose points on the surface randomly rather than using an area grid. Further, I examine trade offs between time and accuracy. I also examine the efficacy of programming calculations with <i>arrays</i> rather than <i>iterative loops</i>.
